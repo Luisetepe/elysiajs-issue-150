@@ -1,0 +1,34 @@
+{
+    "name": "artema-platform-api",
+    "version": "0.0.1",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "bun run --hot src/index.ts",
+        "format": "prettier . --write",
+        "db:generate": "drizzle-kit generate:sqlite",
+        "db:migrate": "bun ./migrator.ts",
+        "db:seed": "bun ./seed.ts"
+    },
+    "dependencies": {
+        "@elysiajs/swagger": "^0.6.2",
+        "@kinde-oss/kinde-typescript-sdk": "^1.0.4",
+        "drizzle-orm": "^0.28.6",
+        "elysia": "^0.6.21",
+        "jose": "^4.14.6",
+        "postgres": "^3.3.5",
+        "znv": "^0.4.0",
+        "zod": "^3.22.2"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.6.0",
+        "@typescript-eslint/parser": "^6.6.0",
+        "bun-types": "^1.0.1",
+        "drizzle-kit": "^0.19.13",
+        "eslint": "^8.49.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "prettier": "^3.0.3",
+        "typescript": "^5.2.2"
+    },
+    "module": "src/index.js"
+}
